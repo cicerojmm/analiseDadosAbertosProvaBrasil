@@ -1,4 +1,4 @@
-# Análise de Dados Abertos Prova Brasil 2011
+# Análise de Dados Abertos da Prova Brasil 2011
 
 A Prova Brasil é uma avaliação censitária das escolas públicas das redes municipais, estaduais e federal, com o objetivo de avaliar a qualidade do ensino. Participam desta avaliação as escolas que possuem, no mínimo, 20 alunos matriculados nas séries/anos avaliados, sendo os resultados disponibilizados por escola e por ente federativo.
 
@@ -18,7 +18,7 @@ E o Metabase é uma solução de visualização de dados open source com recurso
     
 ### Modelagem Dimensional dos dados
 
-![alt text](https://github.com/cicerojmm/analiseDadosAbertosProvaBrasil/blob/master/images/modelagem-dimensional.png?raw=true)
+![alt text](https://github.com/cicerojmm/analiseDadosAbertosProvaBrasil/blob/master/images/modelagem-dimensional.png?raw=true =300x300)
 
 ### Execução do Projeto
 O projeto está totalmente baseado no Docker e Docker Compose, basta seguir os passos abaixo:
@@ -38,8 +38,8 @@ $ ./baixar_dados_abertos.sh
 4. Executar a pipeline de dados no airflow.
 5. Configurar e criar as visualizações no Metabase.
 
-### Imagem do Fluxo Completo no Airflow
+### Fluxo Completo no Airflow
 ![alt text](https://github.com/cicerojmm/analiseDadosAbertosProvaBrasil/blob/master/images/pipeline-completa-airflow.png?raw=true)
 
-### Imagem do Dashboard gerado no Metabase
+### Dashboard gerado no Metabase
 ![alt text](https://github.com/cicerojmm/analiseDadosAbertosProvaBrasil/blob/master/images/dashboard-metabase.png?raw=true)
