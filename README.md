@@ -11,7 +11,10 @@ Link dos dados abertos do Governo do Brasil: http://dados.gov.br/dataset/microda
 - MetaBase: https://www.metabase.com/
 
 #### Decisões arquiteturais
-    O Airflow foi escolhido para orquestrar a pipeline de dados por ser flexível e permitir organizar os passos com facilidades, caso necessite de escolabilidade pode facilmente incoporar outros frameworks de processamento distribuido. O Redshift é totalmente gerenciado e oferece uma solução completa para montar o DataWarehouse. O S3 permite armazenar os dados e carregar através dele as tabelas do Redshift. E o Metabase é uma solução de visualização de dados open source com recursos fáceis e eficientes para montar dashboards.
+O Airflow foi escolhido para orquestrar a pipeline de dados por ser flexível e permitir organizar os passos com facilidades, caso necessite de escolabilidade pode facilmente incoporar outros frameworks de processamento distribuido. 
+O Redshift é totalmente gerenciado e oferece uma solução completa para montar o DataWarehouse. 
+O S3 permite armazenar os dados e carregar através dele as tabelas do Redshift, se tornando uma stagging area.
+E o Metabase é uma solução de visualização de dados open source com recursos fáceis e eficientes para montar dashboards.
     
 ### Modelagem Dimensional dos dados
 
@@ -31,7 +34,7 @@ $ docker-compose -f docker-compose-metabase.yml up -d
 ```sh
 $ ./baixar_dados_abertos.sh
 ```
-3. No painel web do Airflow cadastrar as connections do S3 com o nome aws_s3 e do Redshift com o nome aws_redshift.
+3. No painel web do Airflow cadastrar as connections do S3 com o nome *aws_s3* e do Redshift com o nome *aws_redshift*.
 4. Executar a pipeline de dados no airflow.
 5. Configurar e criar as visualizações no Metabase.
 
