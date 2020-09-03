@@ -18,7 +18,7 @@ E o Metabase é uma solução de visualização de dados open source com recurso
     
 ### Modelagem Dimensional dos dados
 
-![alt text](https://github.com/cicerojmm/analiseDadosAbertosProvaBrasil/blob/master/images/modelagem-dimensional.png?raw=true) {height: 300px}
+![alt text](https://github.com/cicerojmm/analiseDadosAbertosProvaBrasil/blob/master/images/modelagem-dimensional.png?raw=true)
 
 ### Execução do Projeto
 O projeto está totalmente baseado no Docker e Docker Compose, basta seguir os passos abaixo:
