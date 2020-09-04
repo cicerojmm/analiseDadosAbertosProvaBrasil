@@ -37,8 +37,10 @@ $ docker-compose -f docker-compose-metabase.yml up -d
 $ ./baixar_dados_abertos.sh
 ```
 3. No painel web do Airflow cadastrar as connections do S3 com o nome *aws_s3* e do Redshift com o nome *aws_redshift*.
-4. Executar a pipeline de dados no airflow.
-5. Configurar e criar as visualizações no Metabase.
+4. Criar as tabelas necessárias no Redshift utilizando o script *criacao-tabelas-dw-redshift.sql* deste repositório.
+5. Criar um bucket no S3 e alterar o nome do bucket no código para o criado neste passo.
+5. Executar a pipeline de dados no airflow.
+6. Configurar e criar as visualizações no Metabase.
 
 ### Fluxo Completo no Airflow
 ![alt text](https://github.com/cicerojmm/analiseDadosAbertosProvaBrasil/blob/master/images/pipeline-completa-airflow.png?raw=true)
