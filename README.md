@@ -1,5 +1,7 @@
 # Análise de Dados Abertos da Prova Brasil 2011
 
+Importante: O projeto tem apenas a finalidade de estudar as ferramentas e servir como base de arquitetura para outras soluções.
+
 A Prova Brasil é uma avaliação censitária das escolas públicas das redes municipais, estaduais e federal, com o objetivo de avaliar a qualidade do ensino. Participam desta avaliação as escolas que possuem, no mínimo, 20 alunos matriculados nas séries/anos avaliados, sendo os resultados disponibilizados por escola e por ente federativo.
 
 Link dos dados abertos do Governo do Brasil: http://dados.gov.br/dataset/microdados-prova-brasil 
